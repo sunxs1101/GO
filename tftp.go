@@ -15,7 +15,7 @@ if ((config.Cmd("/bin/sh","-c",`systemctl status tftpd-hpa | grep "not-found"`) 
 {
   linuxdis = config.LinuxDistro()
   if (linuxdis == "centos"){
-    config.Cmd("yum", "install", "tftp-hpa")  
+    config.Cmd("yum", "install", "tftp-server")  
   }
   else if (linuxdis == "ubuntu"){
     config.Cmd("apt-get", "install", "tftp-hpa")
