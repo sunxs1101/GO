@@ -6,8 +6,7 @@ import (
 	"strings"
         "os/exec"
 	"github.com/topicai/candy"
-	"github.com/config/linux_distro.go"
-	"github.com/config/cmd.go"
+	"github.com/config"
 	"github.com/wangkuiyi/sh"
 )
 
