@@ -35,8 +35,20 @@ initrd.img-->启动系统-->(到指定url去下载ks.cfg文件-->根据ks.cfg文
 yum install vsftpd 
 
 ## 2. install DHCP Server
-yum install dhcp
-yum install vsftpd 
+centos:sudo yum install dhcp
+
+在ubuntu上安装:sudo apt-get -y install isc-dhcp-server
+配置文件：
+ - /etc/dhcpd/dhcpd.conf
+ - /usr/sbin/dhcpd
+ - /var/lib/dhcp/dhcpd.leases
+DHCP的IP分配方式可以分为动态IP和固定IP，如果需要分配固定IP的话，那么就需要知道要设置成固定IP的
+那台计算机的硬件地址(MAC)。如何查看MAC？
+ 
+ - ifconfig | grep HW #eth0对应的
+ - ping -c 3 192.168.1.254, arp -n #查看别人的MAC
+ -  
+
 ## 3. [install TFTP Server](http://vinobkaranath.blogspot.jp/2014/06/install-tftp-server-in-ubuntu-1404.html)
 $ sudo apt-get install tftpd-hpa
 $ sudo vi /etc/default/tftpd-hpa
