@@ -90,7 +90,11 @@ yum -y install syslinux
 cp /usr/share/syslinux/pxelinux.0 /var/lib/tftpboot/
 ```
 
-## 5. Nginx:web服务器，是Apache服务器不错的替代品。
-
+## 5. HTTP Server
+Nginx:web服务器，是Apache服务器不错的替代品。
+```
+sudo apt-get update
+sudo apt-get install nginx
+```
 
 
