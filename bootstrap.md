@@ -1,5 +1,16 @@
 
-booststrap任务分工：负责tftp
+让cc为k8s所有worker和master都提供配置文件。
+cc的输入时yaml文件，yaml文件定义集群是什么样子的。
+问题：当手工配置pxe server，也需要集群相关信息，但
+没有yaml文件。很多信息时cc yaml中有的，有的是没有的。
+解决：1.完备信息2.写个程序配置pxe server：包括skydns，ngnix，
+暂且叫bootstrap。和cc一样，输入都是同一个yaml。
+写一个bootsrap程序：go语言
+
+
+
+
+https://github.com/k8sp/bare-metal-coreos/blob/master/pxe-on-rasppi/README.md
 
 ## PXE Server
 [http://elinux.org/R-Pi_PXE_Server]()
