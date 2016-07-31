@@ -50,13 +50,36 @@ DHCP的IP分配方式可以分为动态IP和固定IP，如果需要分配固定I
  -  
 
 ## 3. [install TFTP Server](http://vinobkaranath.blogspot.jp/2014/06/install-tftp-server-in-ubuntu-1404.html)
+ - ubuntu
+ 
 $ sudo apt-get install tftpd-hpa
 $ sudo vi /etc/default/tftpd-hpa
 
-## 4.下载pxe引导配置文件
-yum install syslinux
 
-## 5. Nginx:web服务器，时Apache服务器不错的替代品。
+ - centos:
+
+   yum -y install tftp-server
+   yum -y install xinetd
+   启动服务
+   service xinetd restart
+   chkconfig tftp on
+
+## 4.下载pxe引导配置文件
+ - ubuntu
+```
+sudo apt-get install pxelinux syslinux-common
+cp /usr/lib/PXELINUX/pxelinux.0 /srv/tftp/
+cp /usr/lib/syslinux/modules/bios/ldlinux.c32 /srv/tftp/
+```
+
+ - centos
+还要复制一个叫pxelinux.0这个文件、这个文件是由syslinux提供的、要安装这个程序包才会有这个文件
+```
+yum -y install syslinux
+cp /usr/share/syslinux/pxelinux.0 /var/lib/tftpboot/
+```
+
+## 5. Nginx:web服务器，是Apache服务器不错的替代品。
 
 
 
