@@ -1,6 +1,8 @@
-git学习
 
-## git pull https://github.com/k8sp/auto-install.git master
+
+## git学习
+
+git pull https://github.com/k8sp/auto-install.git master
   
  ```
  git clone https://github.com/k8sp/auto-install.git
