@@ -32,4 +32,6 @@ git pull https://github.com/k8sp/auto-install.git master
  git commit
  git push
  ```
- 
+ ```
+ 进入git clone的目录，git pull获取最新的状态
+ ```
