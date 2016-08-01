@@ -51,8 +51,10 @@ git pull https://github.com/k8sp/auto-install.git master
  可以压缩到一起
  git merge master feature
  ```
- 
- 
+ ```
+ git checkout feature
+ git rebase master
+ ```
  
  
  
