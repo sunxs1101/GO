@@ -7,7 +7,6 @@ git学习
  git branch
  git checkout tftp_conf不可行
  解决方法：
- git branch -a
  git remote -v
  git status
  然后git checkout tftp_conf
@@ -23,3 +22,12 @@ git学习
  git commit -m "mv to  bootstrapper/tftp/"
  git push
  ```
+ 步骤：
+ ```
+ pull master
+ 新建分支：checkout -a
+ 在相应目录下操作
+ git commit
+ git push
+ ```
+ 
