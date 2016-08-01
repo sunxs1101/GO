@@ -35,3 +35,24 @@ git pull https://github.com/k8sp/auto-install.git master
  ```
  进入git clone的目录，git pull获取最新的状态
  ```
+ ```
+ git checkout -b wangkuiyi-master master
+ git branch -a
+ git checkout master
+ get merge --no-ff wangkuiyi-master
+ git merge --no-ff wangkuiyi-master
+ ```
+ ### git merge与git rebase
+ 这两者是一回事，
+ ```
+ 将master分支合并到feature分支
+ git checkout feature
+ git merge master
+ 可以压缩到一起
+ git merge master feature
+ ```
+ 
+ 
+ 
+ 
+ 
