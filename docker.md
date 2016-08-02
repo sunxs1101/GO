@@ -12,3 +12,6 @@
 
 sudo usermod -a -G docker $USER  
 
+## docker 命令
+
+docker exec -it 
