@@ -2,6 +2,14 @@
 
 ## git学习
 
+https://git-scm.com/doc
+
+```
+放弃修改
+git reset 
+git checkout -- 
+```
+
 git pull https://github.com/k8sp/auto-install.git master
   
  ```
