@@ -1,8 +1,9 @@
 ```
 Go语言中一行代表一个语句结束，不需要;结尾。
 
-package main
 
+package main
+Go语言类型在变量名之后
 var x, y int
 var (  // 这种因式分解关键字的写法一般用于声明全局变量
     a int
@@ -32,4 +33,15 @@ func main(){
  - nil：空切片
  - 函数：len(), cap(), append(), copy()
 
- 
+### 3.method and interface
+
+go没有类，
+
+
+
+
+
+
+
+
+
