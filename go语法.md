@@ -5,7 +5,7 @@ Go语言中一行代表一个语句结束，不需要;结尾。
 package main
 Go语言类型在变量名之后
 var x, y int
-var (  // 这种因式分解关键字的写法一般用于声明全局变量
+var (    // 这种因式分解关键字的写法一般用于声明全局变量
     a int
     b bool
 )
@@ -13,9 +13,7 @@ var (  // 这种因式分解关键字的写法一般用于声明全局变量
 var c, d int = 1, 2
 var e, f = 123, "hello"
 
-//这种不带声明格式的只能在函数体中出现
-//g, h := 123, "hello"
-
+g, h := 123, "hello"//这种不带声明格式的只能在函数体中出现
 func main(){
     g, h := 123, "hello"
     println(x, y, a, b, c, d, e, f, g, h)
